@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!--<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">-->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-image:url(http://newyork.seriouseats.com/images/2014/03/20140408-288184-CharleneJohnsonHadley-Raposo-Herrig2.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-color: #140e07;
+            color:#fff;
+        }
+
+        .nav a {
+            color: snow;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 14px 10px;
+            text-transform: uppercase;
+        }
+
+        .nav li {
+            display: inline;
+        }
+
+        .container {
+            max-width: 940px;
+        }
+
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header .container {
+            padding: 30px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Main */
+        .main {
+            margin: 200px 0;
+
+        }
+
+        .main h1 {
+            font-size: 30px;
+            margin: 0 0 20px 0;
+        }
+
+        /* Form */
+        form input.form-control {
+            border:0px;
+            border-radius:0px;
+            width: 75%;
+        }
+
+
+        .main .btn {
+            margin-top:-10px;
+            color:#fff;
+            background:rgba(0,240,190,0.25);
+            border:0px;
+            border-radius:0px;
+        }
+
+        .spacing {
+            padding-top: 10px;
+        }
+
+        h5 a {
+            color: deepskyblue;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="nav">
+    <div class="container">
+        <ul class="pull-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+        </ul>
+        <ul class="pull-right">
+            <li><a href="SignUp.html">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="container">
+        <!--<img src="https://s3.amazonaws.com/codecademy-content/projects/pocketbook/logo.svg" width="50">-->
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>We're all set for you</h1>
+                <form ng-app="myApp" ng-controller="validateCtrl"
+                      name="myForm" novalidate role="form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" ng-model="user" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="spacing"></div>
+                    <button type="submit" class="btn">Sign In</button>
+                    <div class="spacing"></div>
+                    <h5>New here? <a href="SignUp.html"> Sign Up</a></h5>
+                    <h5>Forgot Password? <a href="ForgotPassword.html"> Remember</a></h5>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body></html>
+
+</html>
