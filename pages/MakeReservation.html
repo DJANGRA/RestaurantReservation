@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+    <script>
+    function validateForm() {
+    var x = document.forms["myForm"]["datepicker"].value;
+    if (x == null || x == "") {
+    alert("Date must be filled out");
+    return false;
+    }
+    }
+    </script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-image:url(https://s-media-cache-ak0.pinimg.com/originals/83/c1/b4/83c1b411ff0caaa6052ce040488681f4.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-color: #140e07;
+            color:#fff;
+        }
+
+        .nav a {
+            color: snow;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 14px 10px;
+            text-transform: uppercase;
+        }
+
+        .nav li {
+            display: inline;
+        }
+
+        .container {
+            max-width: 940px;
+        }
+
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header .container {
+            padding: 30px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Main */
+        .main {
+            margin: 80px 50px;
+
+        }
+
+        .main h1 {
+            font-size: 30px;
+            margin: 0 0 20px 0;
+
+        }
+
+        /* Form */
+        form input.form-control {
+            border:30px;
+            border-radius:0px;
+        }
+
+        .main .btn {
+            margin-top:30px;
+            color:#fff;
+            background:white;
+            border:0px;
+            border-radius:0px;
+            width: 100px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        .span {
+            padding: 10px 0px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="nav">
+    <div class="container">
+        <ul class="pull-left">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Check For Availability</h1>
+                <form name="myForm" role="form">
+                    <div class="span"></div>
+                    <div class="form-group">
+                        <label for="datepicker">Reservation Date</label>
+                        <input id="datepicker" />
+                        <div class="span"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Reservation Time</label>
+                        <select>
+                            <option value=" "></option>
+                            <option value="05:00">05:00</option>
+                            <option value="05:30">05:30</option>
+                            <option value="06:00">06:00</option>
+                            <option value="06:30">06:30</option>
+                        </select>
+                    </div>
+                    <div class="span"></div>
+                    <div class="form-group">
+                        <label for="number">Party Size</label>
+                        <input type="number" class="form-control" id="number" required>
+                    </div>
+                    <div class="span"></div>
+                    <div class="form-group">
+                        <label for="email">Contact Details</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="span"></div>
+                    <button type="submit" class="btn"><a href = "Booking.html">Check</a></button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
+
+
+
+
+
