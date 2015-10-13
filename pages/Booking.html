@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!--<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">-->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-image:url(http://carmelitasrestaurants.com/wp-content/uploads/2014/05/gray_wine_juice_food_grapes_abstract_photography_hd-wallpaper-1573504.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-color: #140e07;
+            color:#fff;
+        }
+
+        .nav a {
+            color: gray;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 14px 10px;
+            text-transform: uppercase;
+        }
+
+        .nav li {
+            display: inline;
+        }
+
+        .container {
+            max-width: 940px;
+        }
+
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header .container {
+            padding: 30px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        /* Main */
+        .main {
+            margin: 80px 600px;
+
+        }
+
+        .main h1 {
+            font-size: 30px;
+            margin: 0 0 20px 0;
+        }
+
+        /* Form */
+        form input.form-control {
+            border:0px;
+            border-radius:0px;
+            width: 75%;
+        }
+
+        .main .btn {
+            margin-top:30px;
+            color:#fff;
+            background:rgba(0,240,190,0.25);
+            border:0px;
+            border-radius:0px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+<div class="nav">
+    <div class="container">
+        <ul class="pull-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+        </ul>
+        <ul class="pull-right">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="Login.html">Log In</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="container">
+        <!--<img src="https://s3.amazonaws.com/codecademy-content/projects/pocketbook/logo.svg" width="50">-->
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Let's get ready for your visit</h1>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="first">First name</label>
+                        <input type="text" class="form-control" id="first">
+                    </div>
+                    <div class="form-group">
+                        <label for="last">Last name</label>
+                        <input type="text" class="form-control" id="last">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Special Requests</label>
+                        <input type="text" class="form-control" id="text">
+                    </div>
+                    <button type="submit" class="btn">Confirm Booking</button>
+                    <h4>An email will be sent to your account with your confirmation number.</h4>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body></html>
+
