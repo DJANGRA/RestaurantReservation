@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav a {
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+
+.jumbotron {
+    background-image:url('http://40.media.tumblr.com/3c2058d6644f4a10a26499fa461d355d/tumblr_nnizk4xmxj1s1j2cao2_1280.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    position: relative;
+    top:10px;
+}
+
+.jumbotron h1 {
+    color: saddlebrown;
+    font-size: 48px;
+    /*font-family: 'Shift', sans-serif;*/
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #000;
+}
+
+.jumbotron {
+    font-size: 20px;
+}
+
+.food-guides {
+    background-color : #efefef;
+    border-bottom : 1px solid #dbdbdb;
+}
+
+.food-guides h2 {
+    color : #393c3d;
+    font-size : 24px;
+}
+
+.food-guides p {
+    font-size : 15px;
+    margin-bottom : 13px;
+}
+
+.footer {
+    background-color: #f7f7f7;
+}
+
+.footer h3 {
+    /*font-family: 'Shift', sans-serif;*/
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #00b0ff;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+    background-color: rgba(0,200,190,0.55);
+    font-size: 16px;
+    margin-top: 5px;
+    min-width: 275px;
+    left: -150%;
+    padding: 0 10px 0 30px;
+    /*right: 100%;*/
+    color: white;
+
+}
+
+.dropdown-menu h1 {
+    /*font-family: 'Open Sans', sans-serif;*/
+    text-align: center;
+    font-size: 18px;
+    color: lightgoldenrodyellow;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Form */
+form input.form-control {
+    border:0px;
+    border-radius:0px;
+    width: 75%;
+    height: 10%;
+}
+
+.dropdown-menu .spacing {
+    padding-top: 10px;
+}
+
+.dropdown-menu h5 a {
+    color: lightgoldenrodyellow;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+
+.dropdown-menu .btn {
+    color:rgba(0,200,190,0.99);
+    background:#fff;
+    border:0px;
+    border-radius:0px;
+    font-weight: bold;
+}
